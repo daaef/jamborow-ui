@@ -107,13 +107,11 @@
         </a>
       </div>
     </div>
-    <div class="video--content">
-      <div class="video-container">
-        <video src="assets/img/jamborow.mp4#t=90000,100000" loop playsinline uk-video="autoplay: inview"></video>
-        <div class="controls">
-          <a href="#" class="play--video"><img src="assets/img/play.png" alt="" /></a>
-          <a href="#" class="pause--video"><img src="assets/img/pause.png" alt="" /></a>
-        </div>
+    <div class="img-container">
+      <div class="about-img-holder">
+        <img class="about-img" src="assets/img/about.png" alt="">
+        <img src="assets/img/Logo.png" alt="" class="about--log">
+        <p>Welcome to Jamborow</p>
       </div>
     </div>
   </div>
@@ -159,12 +157,15 @@
     <section class="about--content bg-white" id="about">
         <div class="container">
             <h3 class="shadow-title c-black uk-margin-bottom"><span class="color-primary">About</span> Us</h3>
-            <div class="uk-width-1-1@m about" uk-grid>
-                <div class="img-container">
-                    <div class="about-img-holder">
-                        <img class="about-img" src="assets/img/about.png" alt="">
-                        <img src="assets/img/Logo.png" alt="" class="about--log">
-                        <p>Welcome to Jamborow</p>
+            <div class="uk-width-1-1@m about uk-flex-middle" uk-grid>
+                <div class="video--content">
+                    <div class="video-container">
+                        <video src="assets/img/jamborow.mp4#t=90000,100000" loop playsinline uk-video="autoplay: inview"
+                               muted></video>
+                        <div class="controls">
+                            <a href="#" class="play--video"><img src="assets/img/play.png" alt=""/></a>
+                            <a href="#" class="pause--video"><img src="assets/img/pause.png" alt=""/></a>
+                        </div>
                     </div>
                 </div>
                 <div class="uk-width-expand text--content">
@@ -217,29 +218,22 @@
             </div>
         </div>
     </section>
-    <section class="solution--content bg-purple" id="problem">
-        <div class="container">
-            <ul class="uk-flex-center" uk-tab
-                uk-switcher="animation: uk-animation-slide-top-medium, uk-animation-slide-bottom-medium">
-                <li><a href="#">The Problem</a></li>
-                <li><a href="#">The Opportunity</a></li>
-            </ul>
-
-            <div class="uk-switcher uk-margin">
-
+    <div class="solution--content bg-white uk-position-relative uk-position-z-index" id="problem">
+        <div class="uk-width-1-1@m uk-flex uk-flex-wrap uk-child-width-1-2@m">
+            <section class="problem">
                 <div class="uk-width-1-1@m uk-position-relative uk-position-z-index">
-                    <h3 class="shadow-title c-black uk-margin-remove">The <span class="color-primary">Problem</span>
+                    <h3 class="shadow-title c-black uk-margin-remove">The <span class="c-white">Problem</span>
                     </h3>
-                    <div class="uk-child-width-1-3@s uk-margin-top uk-grid-match" uk-grid>
+                    <div class="uk-child-width-1-2@s uk-margin-top uk-grid-match uk-grid-small" uk-grid>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-body uk-border-pill">
+                            <div class="uk-card uk-card-default">
                                 <p>Massive unbanked population in Africa not included in the financial sector. 65% of
                                     the
                                     population are unbanked.</p>
                             </div>
                         </div>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-body uk-border-pill">
+                            <div class="uk-card uk-card-default ">
                                 <p>
                                     Micro lenders, micro saving schemes and cooperatives are not automated, and can’t
                                     scale
@@ -247,45 +241,47 @@
                             </div>
                         </div>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-body uk-border-pill">
+                            <div class="uk-card uk-card-default">
                                 <p>
                                     No insight and data-driven science around lending to attract big money for micro
                                     lenders.</p>
                             </div>
                         </div>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-body uk-border-pill">
+                            <div class="uk-card uk-card-default">
                                 <p>
                                     Peer-to-peer lenders (diaspora, individual lenders, etc.) do not have a platform to
                                     operate.</p>
                             </div>
                         </div>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-body uk-border-pill">
+                            <div class="uk-card uk-card-default">
                                 <p>
                                     Banks cannot service this space.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+            <section class="opportunity">
                 <div class="uk-width-1-1@m uk-position-relative uk-position-z-index">
-                    <h3 class="shadow-title c-black uk-margin-remove">The <span class="color-primary">Opportunity</span>
+                    <h3 class="shadow-title c-white uk-margin-remove">The <span class="color-primary">Opportunity</span>
                     </h3>
-                    <div class="uk-child-width-1-3@s uk-margin-top uk-grid-match" uk-grid>
+                    <div class="uk-child-width-1-2@s uk-margin-top uk-grid-match uk-grid-small" uk-grid>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-body uk-border-pill">
+                            <div class="uk-card uk-card-default">
                                 <p>Peer-to-peer lenders (diaspora, individual lenders, etc.) now have a platform to
                                     operate.</p>
                             </div>
                         </div>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-body uk-border-pill">
+                            <div class="uk-card uk-card-default">
                                 <p>
                                     Grassroot Data such as KYC and Credit footprint will better serve this segment.</p>
                             </div>
                         </div>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-body uk-border-pill">
+                            <div class="uk-card uk-card-default">
                                 <p>
                                     Massive opportunity for lenders to access this demographic with attractive interest
                                     rates</p>
@@ -293,149 +289,178 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-
-            <div class="uk-width-1-1@m uk-position-relative uk-position-z-index">
-                <h3 class="shadow-title c-black uk-margin-remove">Our <span class="color-primary">Solution</span>
-                </h3>
-                <p class="uk-margin-remove">Jamborow has built Africa’s first intelligent B2B AI and Blockchain
-                    FinTech platform.</p>
-            </div>
-            <div class="switcher uk-child-width-1-2@m uk-flex uk-flex-wrap">
-                <ul class="uk-subnav uk-subnav-pill uk-child-width-1-3@m"
-                    uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
-                    <li><a href="#">Intelligent Lending Platform</a></li>
-                    <li><a href="#">Borrowers</a></li>
-                    <li><a href="#">Lenders</a></li>
-                    <li><a href="#">Intermediaries</a></li>
-                    <li><a href="#">Ecosystem</a></li>
-                </ul>
-
-                <ul class="uk-switcher uk-margin">
-                    <li>
-                        <div>
-                            <img src="assets/img/platform.png" alt="">
-                            <p>
-                                A value-added micro-finance platform with a diversified user base.Strong partnerships
-                                and cooperations with leading micro-lenders, cooperatives and MFIs.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/img/borrow.png" alt="">
-                            <p>
-                                A diversified borrower base with unbanked/underbanked merchants, artisan, workers,
-                                students,
-                                e.t.c. Loan products and other financial services that meet their individual needs.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/img/lender.png" alt="">
-                            <p>
-                                A competitive professional lender network with established lenders providing value-added
-                                services. Cross member interaction, with other members transacting on our platform.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/img/intermediaries.png" alt="">
-                            <p>
-                                A network of competitive and cheap funding sources providing lending capital to our
-                                professional lenders, based on coverage opportunity and return.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/img/ecosystem.png" alt="">
-                            <p>
-                                Codified incentives and processes to encourage provide a higher rate of repayment.
-                                Technology with robust multi-threading capability that handles bulk transaction in
-                                seconds
-                                and accomodates the expansion and processing of more complex user data.
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            </section>
         </div>
-    </section>
+
+        <section>
+            <div class="container">
+                <div class="uk-width-1-1@m uk-position-relative uk-position-z-index">
+                    <h3 class="shadow-title c-black uk-margin-remove">Our <span class="color-primary">Solution</span>
+                    </h3>
+                    <p class="uk-margin-remove">Jamborow has built Africa’s first intelligent B2B AI and Blockchain
+                        FinTech platform.</p>
+                </div>
+                <div class="switcher uk-child-width-1-2@m uk-flex uk-flex-wrap">
+                    <ul class="uk-subnav uk-subnav-pill uk-child-width-1-3@m"
+                        uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+                        <li><a href="#">Intelligent Lending Platform</a></li>
+                        <li><a href="#">Borrowers</a></li>
+                        <li><a href="#">Lenders</a></li>
+                        <li><a href="#">Intermediaries</a></li>
+                        <li><a href="#">Ecosystem</a></li>
+                    </ul>
+
+                    <ul class="uk-switcher uk-margin">
+                        <li>
+                            <div>
+                                <img src="assets/img/platform.png" alt="">
+                                <p>
+                                    A value-added micro-finance platform with a diversified user base.Strong
+                                    partnerships
+                                    and cooperations with leading micro-lenders, cooperatives and MFIs.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="assets/img/borrow.png" alt="">
+                                <p>
+                                    A diversified borrower base with unbanked/underbanked merchants, artisan, workers,
+                                    students,
+                                    e.t.c. Loan products and other financial services that meet their individual needs.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="assets/img/lender.png" alt="">
+                                <p>
+                                    A competitive professional lender network with established lenders providing
+                                    value-added
+                                    services. Cross member interaction, with other members transacting on our platform.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="assets/img/intermediaries.png" alt="">
+                                <p>
+                                    A network of competitive and cheap funding sources providing lending capital to our
+                                    professional lenders, based on coverage opportunity and return.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="assets/img/ecosystem.png" alt="">
+                                <p>
+                                    Codified incentives and processes to encourage provide a higher rate of repayment.
+                                    Technology with robust multi-threading capability that handles bulk transaction in
+                                    seconds
+                                    and accomodates the expansion and processing of more complex user data.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
     <section class="advantage--content bg-white" id="features">
         <div class="container">
             <div class="uk-width-1-1@m">
                 <h3 class="shadow-title c-black uk-margin-remove"><span class="color-primary">Jamborow</span> Platform
                     Advantage
                 </h3>
-                <div class="uk-width-1-1@m uk-flex uk-margin-top uk-flex-wrap uk-flex-middle">
-                    <div class="uk-width-1-3@m uk-padding-remove-left uk-padding adv--cards">
+                <div class="uk-width-1-1@m uk-flex uk-margin-top uk-child-width-1-3@m uk-flex-wrap uk-flex-middle adv--cards uk-grid-small"
+                     uk-height-match="target: > div > div">
+                    <div>
                         <div class="bg-primary">
                             <div class="uk-flex uk-flex-between">
                                 <img src="assets/img/bulb.png" alt="">
                                 <h2>Security</h2>
                             </div>
-                            User ID and password protected third-party/channel partner portals.
+                            <span>
+                                User ID and password protected third-party/channel partner portals.
+                            </span>
                         </div>
+                    </div>
+                    <div>
                         <div class="bg-black">
                             <div class="uk-flex uk-flex-between">
                                 <img src="assets/img/report.png" alt="">
                                 <h2>Reporting</h2>
                             </div>
+                            <span>
                             Reporting capability, administrative functions, and the ability to set business rules for
                             two-way referrals.
+                            </span>
                         </div>
+                    </div>
+                    <div>
                         <div class="bg-primary">
                             <div class="uk-flex uk-flex-between">
                                 <img src="assets/img/wallet.png" alt="">
                                 <h2>E-Wallets</h2>
                             </div>
+                            <span>
                             Creation of wallets for all users
+                            </span>
                         </div>
+                    </div>
+                    <div>
                         <div class="bg-black">
                             <div class="uk-flex uk-flex-between">
                                 <img src="assets/img/api.png" alt="">
                                 <h2>API Enabled</h2>
                             </div>
+                            <span>
                             Codeshare API-enabled and pattern matching-enabled to facilitate onboarding of users.
+                            </span>
                         </div>
                     </div>
-                    <div class="uk-width-1-3@m">
-                        <div class="uk-position-relative">
-                            <img src="assets/img/advantages.png" alt="">
-                        </div>
-                    </div>
-                    <div class="uk-width-1-3@m uk-padding uk-padding-remove-right adv--cards">
+                    <div>
                         <div class="bg-primary">
                             <div class="uk-flex uk-flex-between">
                                 <img src="assets/img/credit.png" alt="">
                                 <h2>Credit Scoring</h2>
                             </div>
+                            <span>
                             Credit check and proprietary credit scoring algorithim
+                            </span>
                         </div>
+                    </div>
+                    <div>
                         <div class="bg-black">
                             <div class="uk-flex uk-flex-between">
                                 <img src="assets/img/sms.png" alt="">
                                 <h2>SMS</h2>
                             </div>
+                            <span>
                             SMS messaging capability to users via sort codes or USSD codes
+                            </span>
                         </div>
+                    </div>
+                    <div>
                         <div class="bg-primary">
                             <div class="uk-flex uk-flex-between">
                                 <img src="assets/img/advert.png" alt="">
                                 <h2>Advertising</h2>
                             </div>
+                            <span>
                             Banner messaging capability to channel partner portals.
+                            </span>
                         </div>
+                    </div>
+                    <div>
                         <div class="bg-black">
                             <div class="uk-flex uk-flex-between">
                                 <img src="assets/img/ai.png" alt="">
                                 <h2>Artificial Intelligence</h2>
                             </div>
+                            <span>
                             AI (Robo Advisor) algorithm intergration with blockchain KYC
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -446,23 +471,36 @@
                 <p>
                     Jamborow impacts the grassroots of Africa as follows:
                 </p>
-                <ul class="uk-list uk-list-bullet">
-                    <li>
-                        Through data gathered & analyzed, existing organizations can better promote community
-                        development and empowerment, build capacity and develop social capital.
-                    </li>
-                    <li>
-                        Partner with existing & regulated Sacco’s in B2B agreements and acquire KYC information of SME’s
-                        and members.
-                    </li>
-                    <li>
-                        Ability to monitor disbursements to the SMEs and members in real time as Peer-2-Peer entities.
-                    </li>
-                    <li>
-                        Ability to gather real time reports on the disbursements & make real time informed decisions on
-                        the demographic with the data available in the ecosystem.
-                    </li>
-                </ul>
+                <div class="uk-child-width-1-4@m social--impact--cards" uk-grid uk-height-match="target: > div > div">
+                    <div>
+                        <div>
+                            <p>Through data gathered & analyzed, existing organizations can better promote community
+                                development and empowerment, build capacity and develop social capital.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Partner with existing & regulated Sacco’s in B2B agreements and acquire KYC information
+                                of
+                                SME’s
+                                and members.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Ability to monitor disbursements to the SMEs and members in real time as Peer-2-Peer
+                                entities.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p> Ability to gather real time reports on the disbursements & make real time informed
+                                decisions
+                                on
+                                the demographic with the data available in the ecosystem.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -476,7 +514,7 @@
                         <img src="assets/img/ecoba.svg.jfif" alt="">
                     </div>
                     <div class="label--list uk-width-2-3@m">
-                        <ul class="uk-list uk-list-divider">
+                        <ul class="uk-list uk-list-divider uk-list-bullet">
                             <h3 class="uk-text-bold uk-heading-small">VICOBA in Tanzania</h3>
                             <li> Increase value chains through partnerships and start grouping VICOBAs into bigger
                                 groups for more efficiency and therefore create bigger industries by bringing more
@@ -512,7 +550,7 @@
                 </p>
                 <div class="uk-width-1-1@m uk-child-width-1-2@m uk-flex uk-margin-top uk-flex-wrap uk-flex-middle">
                     <div>
-                        <ul class="uk-list uk-list-large uk-list-bullet">
+                        <ul class="uk-list uk-list-large uk-list-divider uk-text-lead">
                             <li>Digitization & Automation of Processes and KYC Information
                             </li>
                             <li>Artificial Intelligence Driven
@@ -542,12 +580,16 @@
             <div class="uk-width-1-1@m">
                 <h3 class="shadow-title c-black uk-margin-remove">The <span class="color-primary">Jamborow</span> Team
                 </h3>
-                <div class="uk-width-1-1@m uk-child-width-1-4@m uk-flex uk-margin-top uk-flex-wrap uk-grid-small"  uk-height-match="target: > div > .team-member--card">
+                <div class="uk-width-1-1@m uk-child-width-1-4@m uk-flex uk-margin-top uk-flex-wrap uk-grid-small"
+                     uk-height-match="target: > div > .team-member--card">
                     <div>
                         <div class="team-member--card">
                             <div class="position">Founder/CEO</div>
                             <div class="team--image">
                                 <img src="assets/img/olusegun.png" alt="">
+                            </div>
+                            <div class="linked--in">
+                                <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
                             </div>
                             <div class="member-name--more">
                                 <div class="member--name">
@@ -565,6 +607,9 @@
                             <div class="team--image">
                                 <img class="img-pos-btm" src="assets/img/moses.png" alt="">
                             </div>
+                            <div class="linked--in">
+                                <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
+                            </div>
                             <div class="member-name--more">
                                 <div class="member--name">
                                     Moses Onitilo
@@ -580,6 +625,9 @@
                             <div class="position">Founder/CVE</div>
                             <div class="team--image">
                                 <img src="assets/img/kamara.png" alt="">
+                            </div>
+                            <div class="linked--in">
+                                <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
                             </div>
                             <div class="member-name--more">
                                 <div class="member--name">
@@ -597,6 +645,9 @@
                             <div class="team--image">
                                 <img src="assets/img/vic.png" alt="">
                             </div>
+                            <div class="linked--in">
+                                <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
+                            </div>
                             <div class="member-name--more">
                                 <div class="member--name">
                                     Victory Yemi Oluwasegun
@@ -611,13 +662,16 @@
                         <div class="team-member--card">
                             <div class="position">Head of Software Development</div>
                             <div class="team--image">
-                                <img src="assets/img/olusegun.png" alt="">
+                                <img src="assets/img/mesh.png" alt="">
+                            </div>
+                            <div class="linked--in">
+                                <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
                             </div>
                             <div class="member-name--more">
                                 <div class="member--name">
                                     Mishael Ishaya
                                 </div>
-                                <div class="more--btn">
+                                <div class="more--btn" uk-toggle="target: #mesh">
                                     <span>+</span>
                                 </div>
                             </div>
@@ -633,6 +687,9 @@
                             <div class="position">Advisory Board Member</div>
                             <div class="team--image">
                                 <img src="assets/img/omitowoju.jpg" alt="">
+                            </div>
+                            <div class="linked--in">
+                                <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
                             </div>
                             <div class="member-name--more">
                                 <div class="member--name">
@@ -650,6 +707,9 @@
                             <div class="team--image">
                                 <img class="img-pos-btm" src="assets/img/richard.jpeg" alt="">
                             </div>
+                            <div class="linked--in">
+                                <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
+                            </div>
                             <div class="member-name--more">
                                 <div class="member--name">
                                     Richard Mifsud
@@ -666,6 +726,9 @@
                             <div class="team--image">
                                 <img src="assets/img/pete.jpg" alt="">
                             </div>
+                            <div class="linked--in">
+                                <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
+                            </div>
                             <div class="member-name--more">
                                 <div class="member--name">
                                     Pete Woodhouse
@@ -681,6 +744,9 @@
                             <div class="position">Advisory Board Member</div>
                             <div class="team--image">
                                 <img src="assets/img/pwill.jpg" alt="">
+                            </div>
+                            <div class="linked--in">
+                                <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
                             </div>
                             <div class="member-name--more">
                                 <div class="member--name">
@@ -758,6 +824,175 @@
             </div>
         </div>
     </section>
+    <div id="articles" class="bg-white uk-position-relative uk-position-z-index">
+        <section class="gallery uk-width-1-1@m">
+            <div class="container">
+                <h3 class="shadow-title c-black uk-margin-remove">Our <span class="color-primary">Gallery</span>
+                </h3>
+                <div uk-filter="target: .js-filter">
+
+                    <ul class="uk-subnav uk-subnav-pill">
+                        <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+                        <li uk-filter-control="[data-color='white']"><a href="#">First</a></li>
+                        <li uk-filter-control="[data-color='blue']"><a href="#">Second</a></li>
+                        <li uk-filter-control="[data-color='black']"><a href="#">Third</a></li>
+                    </ul>
+
+                    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center uk-grid-collapse"
+                        uk-grid uk-lightbox="animation: slide">
+                        <li data-color="white">
+                            <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+                                <img src="https://picsum.photos/450" alt="">
+                            </a>
+                        </li>
+                        <li data-color="blue">
+                            <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+                                <img src="https://picsum.photos/520" alt="">
+                            </a>
+                        </li>
+                        <li data-color="black">
+                            <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+                                <img src="https://picsum.photos/500" alt="">
+                            </a>
+                        </li>
+                        <li data-color="white">
+                            <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+                                <img src="https://picsum.photos/460" alt="">
+                            </a>
+                        </li>
+                        <li data-color="blue">
+                            <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+                                <img src="https://picsum.photos/510" alt="">
+                            </a>
+                        </li>
+                        <li data-color="black">
+                            <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+                                <img src="https://picsum.photos/505" alt="">
+                            </a>
+                        </li>
+                        <li data-color="white">
+                            <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+                                <img src="https://picsum.photos/455" alt="">
+                            </a>
+                        </li>
+                        <li data-color="blue">
+                            <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+                                <img src="https://picsum.photos/515" alt="">
+                            </a>
+                        </li>
+                        <li data-color="black">
+                            <a class="uk-inline" href="https://picsum.photos/525" data-caption="Caption 1">
+                                <img src="https://picsum.photos/525" alt="">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+        <section class="events uk-width-1-1@m">
+            <div class="container">
+                <h3 class="shadow-title c-black uk-margin-remove ">Upcoming <span class="color-primary">Events</span>
+                </h3>
+                <div class="uk-margin-top">
+                    <div class="event">
+                        <img src="https://picsum.photos/480" alt="">
+                        <article class="uk-article">
+
+                            <h2 class="uk-margin-remove"><a class="uk-link-reset" href="">FINANCIAL METHODS</a></h2>
+
+                            <p class="uk-article-meta uk-margin-remove">Written by <a href="#">Super User</a> on 12
+                                April 2012. Posted in <a href="#">Events</a></p>
+
+                            <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+
+
+                            <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                                <div>
+                                    <a class="uk-button uk-button-secondary uk-margin-top" href="#">Read more</a>
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+                    <div class="event uk-margin-top">
+                        <img src="https://picsum.photos/490" alt="">
+                        <article class="uk-article">
+
+                            <h2 class="uk-margin-remove"><a class="uk-link-reset" href="">FINANCIAL METHODS</a></h2>
+
+                            <p class="uk-article-meta uk-margin-remove">Written by <a href="#">Super User</a> on 12
+                                April 2012. Posted in <a href="#">Events</a></p>
+
+                            <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+
+
+                            <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                                <div>
+                                    <a class="uk-button uk-button-secondary uk-margin-top" href="#">Read more</a>
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="latest--posts uk-width-1-1@m">
+            <div class="container">
+                <div class="uk-width-1-1@m uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <div class="post--title">
+                            <h3 class="shadow-title c-black uk-margin-remove ">Latest<br> <span class="color-primary">Posts</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="post">
+                            <div class="post--img">
+                                <img src="https://picsum.photos/550" alt="">
+                            </div>
+                            <div class="post--content">
+                                <h4 class="uk-card-title uk-margin-remove">Ways to secure your Jamborow Account</h4>
+                                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Doloribus excepturi in iure magni necessitatibus quisquam sint! Corporis delectus
+                                    illo repellat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="post">
+                            <div class="post--img">
+                                <img src="https://picsum.photos/650" alt="">
+                            </div>
+                            <div class="post--content">
+                                <h4 class="uk-card-title uk-margin-remove">Ways to secure your Jamborow Account</h4>
+                                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Doloribus excepturi in iure magni necessitatibus quisquam sint! Corporis delectus
+                                    illo repellat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter uk-width-1-1@m">
+            <div class="container text-center uk-flex uk-flex-wrap uk-flex-center">
+                <h2 class="c-white uk-width-1-1@m">Get Started from here</h2>
+                <p class="c-white uk-width-1-1@m">We will never spam your inbox</p>
+                <form>
+                    <div class="uk-position-relative">
+                        <input class="uk-input" type="text" placeholder="Your email here">
+                        <a type="submit" uk-icon="icon: arrow-right; ratio: 1.5"></a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
 </main>
 
 <footer class="footer">
@@ -1008,6 +1243,40 @@
                 <h2 class="uk-article-title uk-margin-remove">
                     Victory Yemi Oluwasegun</h2>
                 <p class="uk-article-meta uk-margin-remove">Advisory Board Member</p>
+                <ul class="uk-list">
+                    <li>
+                        Mr. VictoryYemi Oluwasegun is currently the CIO of Jamborow and COO/co-founder of SpringPort Technologies.
+                    </li>
+                    <li>
+                        Mr. Oluwasegun have bachelor’s degrees in computer information systems – Computer Networking, and Industry Certificates; CompTIA Network+, Microsoft Certified Systems Engineer and Microsoft Certified Trainer.
+                    </li>
+                    <li>
+                        He has gone on to the work as a consultant for the World Bank, Bell Atlantic (Verizon), NASA, Envision Healthcorp, Pediatric Associates, the Pentagon, the State Department and many more fortunes 500 companies.
+                    </li>
+                    <li>
+                        He has over 20+ years of experience in IT which includes managing product development, software and hardware engineering, and directing technical integration and operations. He has successfully managed organizations that have delivered technology solutions to the automotive, computer, engineering, manufacturing, financial services, retail industries, and all levels of Government.
+                    </li>
+                    <li>
+                        In 2008, Mr. Oluwasegun received a commendation letter from the US State Department – Overseas Embassy Operation as one of the Best Contractors to serve the State with distinction. All the while, continuing to mentor and assist in community initiatives like the Daniel Institute for Youths. Victory enjoys running, CrossFit and acting.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="mesh" class="uk-flex-top team--info" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-flex uk-flex-wrap">
+            <div class="uk-width-1-3@m img--space">
+                <img src="assets/img/mesh.jpg" alt="">
+            </div>
+            <div class="uk-width-2-3@m uk-padding info--space">
+                <h2 class="uk-article-title uk-margin-remove">
+                    Mishael Ishaya</h2>
+                <p class="uk-article-meta uk-margin-remove">Head of Software Development</p>
                 <ul class="uk-list">
                     <li>
                         Mr. VictoryYemi Oluwasegun is currently the CIO of Jamborow and COO/co-founder of SpringPort Technologies.
