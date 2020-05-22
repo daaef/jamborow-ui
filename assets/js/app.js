@@ -11482,17 +11482,6 @@ __webpack_require__.r(__webpack_exports__);
  // loads the Icon plugin
 
 uikit__WEBPACK_IMPORTED_MODULE_1___default.a.use(uikit_dist_js_uikit_icons__WEBPACK_IMPORTED_MODULE_2___default.a);
-var myVideo = document.querySelector('video');
-var playBtn = document.querySelector('.play--video');
-var pauseBtn = document.querySelector('.pause--video');
-playBtn.addEventListener('click', function (e) {
-  e.preventDefault();
-  myVideo.play();
-});
-pauseBtn.addEventListener('click', function (e) {
-  e.preventDefault();
-  myVideo.pause();
-});
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     document.querySelector('#introLoader').classList.add('uk-animation-slide-top');
